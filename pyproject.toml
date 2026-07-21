@@ -17,6 +17,8 @@ disallow_untyped_defs = true
 files = "ds_capstone/**/*.py"
 exclude = "^tests/"
 ignore_missing_imports = true
+explicit_package_bases = true
+mypy_path = "src"
 
 [tool.isort]
 multi_line_output = 3

@@ -284,7 +284,7 @@ class SummarizerAgent:
 
         # Define the conversation flow edges
         graph_builder.add_edge(START, "agent")
-        graph_builder.add_conditional_edges("agent",self.tool_router,["tools", END])
+        graph_builder.add_conditional_edges("agent", self.tool_router, ["tools", END])
         graph_builder.add_edge("tools", "agent")
 
         # Compile and return the executable graph
